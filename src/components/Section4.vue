@@ -1,6 +1,14 @@
 <template>
+  <h2>Human Evaluation</h2>
+    <p>
+        To ensure a fair and objective evaluation, we conduct an online survey, which consists of 10 randomly selected subcategories from ChartBench for each questionnaire. 
+        1 chart and 4 assertions are selected from each subcategory for respondents to assess their accuracy. 
+        To obtain reliable evaluation results, the survey participants mainly consist of undergraduate and graduate students with chart reading ability, 
+        as well as other researchers in the campus and company. We encourage participants to use large-screen devices for better chart display and kindly request their patient and diligent responses. 
+        On average, it takes approximately <em>15 minutes</em> and <em>17 seconds</em> to complete each survey. To avoid cases of random guessing, we still employ the <em>Acc+</em> evaluation metric. 
+        Incomplete responses are discarded, and we ensure that each subcategory has valid answers. In total, we have collected 68 valid surveys.
+        </p>
     <div class="container">
-        <h2>Human evaluation results on ChartBench via random questionnaire.</h2>
         <el-table
         class="eval"
         :data="human_eval_chart_type_data"
@@ -31,31 +39,24 @@
         :header-cell-style="{textAlign: 'center'}"
         >
         <el-table-column prop="model" label="Model" width="140"/>
-        <el-table-column>
-            <el-table-column prop="acc_plus" label="Task Type (Acc+)">
-            <el-table-column prop="cr_1" label="CR"/>
-            <el-table-column prop="ve_1" label="VE"/>
-            <el-table-column prop="vc_1" label="VC"/>
-            <el-table-column prop="gc_1" label="GC"/>
-            <el-table-column prop="all_1" label="ALL"/>
-            </el-table-column>
-            <el-table-column prop="cor" label="Task Type (CoR)">
-            <el-table-column prop="cr_2" label="CR"/>
-            <el-table-column prop="ve_2" label="VE"/>
-            <el-table-column prop="vc_2" label="VC"/>
-            <el-table-column prop="gc_2" label="GC"/>
-            <el-table-column prop="all_2" label="ALL"/>
-            </el-table-column>
+        
+        <el-table-column prop="acc_plus" label="Task Type (Acc+)">
+          <el-table-column prop="cr_1" label="CR"/>
+          <el-table-column prop="ve_1" label="VE"/>
+          <el-table-column prop="vc_1" label="VC"/>
+          <el-table-column prop="gc_1" label="GC"/>
+          <el-table-column prop="all_1" label="ALL"/>
+        </el-table-column>
+
+        <el-table-column prop="cor" label="Task Type (CoR)">
+          <el-table-column prop="cr_2" label="CR"/>
+          <el-table-column prop="ve_2" label="VE"/>
+          <el-table-column prop="vc_2" label="VC"/>
+          <el-table-column prop="gc_2" label="GC"/>
+          <el-table-column prop="all_2" label="ALL"/>
         </el-table-column>
         </el-table>
-        <p>
-        IN OUR APDX D.3, to ensure a fair and objective evaluation, we conduct an online survey, which consists of 10 randomly selected subcategories from ChartBench for each questionnaire. 
-        1 chart and 4 assertions are selected from each subcategory for respondents to assess their accuracy. 
-        To obtain reliable evaluation results, the survey participants mainly consist of undergraduate and graduate students with chart reading ability, 
-        as well as other researchers in the campus and company. We encourage participants to use large-screen devices for better chart display and kindly request their patient and diligent responses. 
-        On average, it takes approximately <em>15 minutes</em> and <em>17 seconds</em> to complete each survey. To avoid cases of random guessing, we still employ the <em>Acc+</em> evaluation metric. 
-        Incomplete responses are discarded, and we ensure that each subcategory has valid answers. In total, we have collected 68 valid surveys.
-        </p>
+        
     </div>
 </template>
 

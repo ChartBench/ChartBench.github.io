@@ -4,18 +4,24 @@ import Abstract from "./components/Abstract.vue";
 import Section from "./components/Section.vue";
 import Section2 from "./components/Section2.vue";
 import Section3 from "./components/Section3.vue";
-import Section4 from "./components/Section4.vue"
+import Section4 from "./components/Section4.vue";
+import Section5 from "./components/Section5.vue"
+import Section6 from "./components/Section6.vue"
 import Citation from "./components/Citation.vue";
 </script>
 
 <template>
   <Head />
   <Abstract />
-  <Section />
-  <el-divider />
+  <el-divider/>
   <Section3 />
-  <el-divider />
+  <Section5 />
+  <el-divider/>
+  <Section />
   <Section2 />
+  <el-divider/>
+  <Section6/>
+  <el-divider />
   <Section4 />
   <el-divider />
   <Citation />

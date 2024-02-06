@@ -1,5 +1,6 @@
 <template>
-  <h2>Regular Type</h2>
+  <h2>ChartBench Overview</h2>
+  <br><br>
   <div class="swiperBox">
     <swiper
       :spaceBetween="5"
@@ -46,7 +47,6 @@
       <swiper-slide><img src="/images/contents/samples/pie/5.png"></swiper-slide>
     </swiper>
   </div>
-  <h2>Special Type</h2>
   <div class="swiperBox">
     <swiper
       :spaceBetween="5"

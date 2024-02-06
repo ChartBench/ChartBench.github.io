@@ -6,7 +6,7 @@ import autoprefixer from "autoprefixer";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:"/ChartBench.github.io",
+  base:"/",
   plugins: [vue()],
   resolve: {
     alias: {

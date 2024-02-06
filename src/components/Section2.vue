@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h2>The zero-shot <em>Acc+</em> and <em>Acc</em> (%) performance w.r.t. chart types on ChartBench.</h2>
+    <p style="font-size: 15px;text-align: center;">The zero-shot <em>Acc+</em> and <em>Acc</em> (%) performance w.r.t. chart types on ChartBench.</p>
     <el-table
       class="table"
       :data="chartTypeViewDataRef"
@@ -29,10 +29,11 @@
           </a>
         </template>
       </el-table-column>
-      <el-table-column prop="line" label="line" align="center">
+      <el-table-column prop="line" label="Line" align="center">
         <el-table-column
           prop="line_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -44,7 +45,8 @@
         </el-table-column>
         <el-table-column
           prop="line_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -55,10 +57,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="bar" label="bar" align="center">
+      <el-table-column prop="bar" label="Bar" align="center">
         <el-table-column
           prop="bar_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -70,7 +73,8 @@
         </el-table-column>
         <el-table-column
           prop="bar_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -81,10 +85,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="pie" label="pie" align="center">
+      <el-table-column prop="pie" label="Pie" align="center">
         <el-table-column
           prop="pie_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -96,7 +101,8 @@
         </el-table-column>
         <el-table-column
           prop="pie_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -107,10 +113,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="area" label="area" align="center">
+      <el-table-column prop="area" label="Area" align="center">
         <el-table-column
           prop="area_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -122,7 +129,8 @@
         </el-table-column>
         <el-table-column
           prop="area_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -133,10 +141,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="box" label="box" align="center">
+      <el-table-column prop="box" label="Box" align="center">
         <el-table-column
           prop="box_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -148,7 +157,8 @@
         </el-table-column>
         <el-table-column
           prop="box_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -159,10 +169,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="radar" label="radar" align="center">
+      <el-table-column prop="radar" label="Radar" align="center">
         <el-table-column
           prop="radar_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -174,7 +185,8 @@
         </el-table-column>
         <el-table-column
           prop="radar_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -185,10 +197,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="scatter" label="scatter" align="center">
+      <el-table-column prop="scatter" label="Scatter" align="center">
         <el-table-column
           prop="scatter_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -200,7 +213,8 @@
         </el-table-column>
         <el-table-column
           prop="scatter_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -211,10 +225,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="node" label="node" align="center">
+      <el-table-column prop="node" label="Node" align="center">
         <el-table-column
           prop="node_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -226,7 +241,8 @@
         </el-table-column>
         <el-table-column
           prop="node_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -237,10 +253,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="combination" label="combination" align="center">
+      <el-table-column prop="combination" label="Combination" align="center">
         <el-table-column
           prop="combination_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -252,7 +269,8 @@
         </el-table-column>
         <el-table-column
           prop="combination_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -263,10 +281,11 @@
           </template>
         </el-table-column>
       </el-table-column>
-      <el-table-column prop="all" label="all" align="center">
+      <el-table-column prop="all" label="All" align="center">
         <el-table-column
           prop="all_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -278,7 +297,8 @@
         </el-table-column>
         <el-table-column
           prop="all_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -290,8 +310,8 @@
         </el-table-column>
       </el-table-column>
     </el-table>
-
-    <h2>The zero-shot <em>Acc+</em>, <em>Acc</em> and <em>CoR</em> (%) performance w.r.t. task types on ChartBench.</h2>
+    
+    <p style="font-size: 15px;text-align: center;">The zero-shot <em>Acc+</em>, <em>Acc</em> and <em>CoR</em> (%) performance w.r.t. task types on ChartBench.</p>
     <el-table
       class="table"
       :data="taskTypeViewDataRef"
@@ -323,7 +343,8 @@
       <el-table-column prop="CR" label="CR" align="center">
         <el-table-column
           prop="CR_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -335,7 +356,8 @@
         </el-table-column>
         <el-table-column
           prop="CR_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -348,6 +370,7 @@
         <el-table-column
           prop="CR_cor"
           label="CoR"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -361,7 +384,8 @@
       <el-table-column prop="VE" label="VE" align="center">
         <el-table-column
           prop="VE_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -373,7 +397,8 @@
         >
         <el-table-column
           prop="VE_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -386,6 +411,7 @@
         <el-table-column
           prop="VE_cor"
           label="CoR"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -399,7 +425,8 @@
       <el-table-column prop="VC" label="VC" align="center">
         <el-table-column
           prop="VC_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -411,7 +438,8 @@
         >
         <el-table-column
           prop="VC_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -424,6 +452,7 @@
         <el-table-column
           prop="VC_cor"
           label="CoR"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -437,7 +466,8 @@
       <el-table-column prop="GC" label="GC" align="center">
         <el-table-column
           prop="GC_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -449,7 +479,8 @@
         </el-table-column>
         <el-table-column
           prop="GC_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -462,6 +493,7 @@
         <el-table-column
           prop="GC_cor"
           label="CoR"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -475,7 +507,8 @@
       <el-table-column prop="all" label="all" align="center">
         <el-table-column
           prop="all_acc_plus"
-          label="acc+"
+          label="Acc+"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -487,7 +520,8 @@
         </el-table-column>
         <el-table-column
           prop="all_acc"
-          label="acc"
+          label="Acc"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -500,6 +534,7 @@
         <el-table-column
           prop="all_cor"
           label="CoR"
+          width="82"
           align="center"
           sortable="custom"
         >
@@ -517,7 +552,6 @@
       We report the results of the best-performing prompt for each MLLM. 
       The benchmark is continuously updated to encourage researchers to participate in.
     </p>
-    <el-divider />
   </div>
 </template>
 
